@@ -15,7 +15,10 @@
 * 
 
 ## Specs
-*
+Describe: filterNumbers()
+
+Test: "It will loop through an array of [3, 2, 1] and test user input against each array index and return a boolean.
+Expect:(filterNumbers(3).toEqual(true)))
 
 ## Known Bugs
 *
