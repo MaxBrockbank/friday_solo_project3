@@ -32,8 +32,9 @@
 * Test: "It will combine all current test to work together. Start by creating the range array, then reversing it. After that search through the range array for matches to the checks array and replace the matches with the matching index in the replacements array."
 * Expect: (filterNumber(10).toEqual(["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]))
 
+* Test: "It will make the output results reversed"
+* Expect (filterNumber(["Beep", "Boop", "Won't you be my neighbor?", 4]).toEqual([4, "Won't you be my neighbor?", "Boop!", "Beep!"]))
 ## Known Bugs
-* Form will still submit even with nothing entered. Results will say "NaN".
 
 
 ## Legal

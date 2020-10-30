@@ -30,13 +30,23 @@ body{
 #results {
   display: none;
   margin-top: 30px;
-  border-radius: 10px;
-  width: 80%;
+  border-radius: 5px;
+  width: 82.5%;
   background-color: white;
   color:#4251A8;
   padding: 30px;
 }
 
+#reverse{
+  display: none;
+  background-color:#4251A8 ;
+  color: white;
+  width: 100%;
+  transition: .3s;
+}
+#reverse:hover{
+  background-color:#2E2A6D;
+}
 .error{
   border: 3px solid red;
 }
