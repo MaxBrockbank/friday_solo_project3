@@ -29,6 +29,7 @@ $(document).ready(function(){
         range.push(userNumber);
         userNumber --;
       } while( userNumber > 0 )
+      range.reverse();
       console.log(range);
     }
 

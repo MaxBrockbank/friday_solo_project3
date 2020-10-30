@@ -24,7 +24,10 @@ Test: "It will replace any number in the [3, 2, 1] array with the proper its mat
 Expect: (filterNumbers(3).toEqual("Won't you be my neighbor?"))
 
 Test: "It will produce an array with all the numbers between userInput and 0."
-Expect: (filteNumbers(10).toEqual([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+Expect: (filterNumbers(10).toEqual([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+
+Test: "It will reverse the array containing the number range."
+Expect: (filterNumber(10).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 ## Known Bugs
 *
