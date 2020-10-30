@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
   $("#roboger").submit(function(event){
-    const userInput = $("#userInput1").val();
+    let userInput = $("#userInput1").val();
+    const originalInput = $("#userInput1").val();
     const checks = ["3", "2", "1"];
     const replacements = ["Won't you be my neighbor?", "Boop!", "Beep!"];
     let range = [];
-
     function getNumberRange(userInput){
       range = [];
       let userNumber = parseInt(userInput);
@@ -19,25 +19,27 @@ $(document).ready(function(){
 
     function checkNumbers(numberRange){
       let output = numberRange.map(String);
-      console.log(output);
-      output = output.map( number => {
-        for(let i = 0; i < checks.length; i++){
-          if(number.includes(checks[i])){
-            number = replacements[i];
-            console.log(number);
+      for (let i = 0; i < output.length; i++){
+        for(let j = 0; j < checks.length; j++){
+          if(output[i].includes(checks[j])){
+            output[i] = output[i].replace(output[i], replacements[j])
           }
-        };
-      });
-      console.log(output);
+        }
+      }
+      return output;
     }
+      
 
-
+    const results = $("#results");
     function filterNumbers(userInput){
+      results.children("#results-list").text("");
       let numberRange = getNumberRange(userInput);
-      checkNumbers(numberRange);
+      let finalOutput = checkNumbers(numberRange);
+      finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
     }
       event.preventDefault()
-      filterNumbers(userInput);
+      filterNumbers(originalInput);
+      userInput = $("input#userInput1").val("");
   })
 
 })
