@@ -3,6 +3,19 @@ body{
   color: white;
 }
 
+#main-heading{
+  text-align: center;
+  margin: 30px;
+}
+
+#cube{
+  width: auto;
+  height: 200px;
+  margin: auto;
+  display: block;
+  margin-bottom: -2px;
+}
+
 #submit{
   background-color:#4251A8 ;
   color: white;
@@ -22,4 +35,8 @@ body{
   background-color: white;
   color:#4251A8;
   padding: 30px;
+}
+
+.error{
+  border: 3px solid red;
 }

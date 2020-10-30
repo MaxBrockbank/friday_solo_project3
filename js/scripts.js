@@ -1,6 +1,6 @@
 $(document).ready(function(){
-
   $("#roboger").submit(function(event){
+    // Business
     let userInput = $("#userInput1").val();
     const originalInput = $("#userInput1").val();
     const checks = ["3", "2", "1"];
@@ -29,15 +29,24 @@ $(document).ready(function(){
       return output;
     }
       
-
+    //UI
     const results = $("#results");
     function filterNumbers(userInput){
+      $("input#userInput1").removeClass("error");
       results.children("#results-list").text("");
-      let numberRange = getNumberRange(userInput);
-      let finalOutput = checkNumbers(numberRange);
-      results.children("#results-number").text("You have " +finalOutput.length+  " results:")
-      finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
-      results.fadeIn();
+      if(userInput > 0){
+        let numberRange = getNumberRange(userInput);
+        let finalOutput = checkNumbers(numberRange);
+        results.children("#results-number").text("You have " +finalOutput.length+  " results:")
+        finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
+        results.fadeIn();
+        $("input#userInput1").blur()
+      } else {
+        $("#userInput1").addClass("error");
+        results.children("#results-number").text("You have to enter a number for this to work");
+        results.fadeIn();
+        $("input#userInput1").blur()
+      }
     }
       event.preventDefault()
       filterNumbers(originalInput);
