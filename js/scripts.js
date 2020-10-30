@@ -35,7 +35,9 @@ $(document).ready(function(){
       results.children("#results-list").text("");
       let numberRange = getNumberRange(userInput);
       let finalOutput = checkNumbers(numberRange);
+      results.children("#results-number").text("You have " +finalOutput.length+  " results:")
       finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
+      results.fadeIn();
     }
       event.preventDefault()
       filterNumbers(originalInput);

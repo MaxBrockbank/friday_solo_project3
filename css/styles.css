@@ -1,0 +1,25 @@
+body{
+  background-color: #536DFE;
+  color: white;
+}
+
+#submit{
+  background-color:#4251A8 ;
+  color: white;
+  width: 100%;
+  transition: .3s;
+}
+
+#submit:hover{
+  background-color:#2E2A6D;
+}
+
+#results {
+  display: none;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 80%;
+  background-color: white;
+  color:#4251A8;
+  padding: 30px;
+}
