@@ -17,8 +17,11 @@
 ## Specs
 Describe: filterNumbers()
 
-Test: "It will loop through an array of [3, 2, 1] and test user input against each array index and return a boolean.
-Expect:(filterNumbers(3).toEqual(true)))
+Test: "It will loop through an array of [3, 2, 1] and test user input against each array index and return a boolean."
+Expect:(filterNumbers(3).toEqual(true))
+
+Test: "It will replace any number in the [3, 2, 1] array with the proper its matching index in ["Beep!", "Boop!", "Won't you be my neighbor?"]"
+Expect: (filterNumbers(3).toEqual("Won't you be my neighbor?"))
 
 ## Known Bugs
 *
