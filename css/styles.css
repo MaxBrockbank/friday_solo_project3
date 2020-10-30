@@ -16,14 +16,14 @@ body{
   margin-bottom: -2px;
 }
 
-#submit{
+#submit, #reverse{
   background-color:#4251A8 ;
   color: white;
   width: 100%;
   transition: .3s;
 }
 
-#submit:hover{
+#submit:hover, #reverse:hover{
   background-color:#2E2A6D;
 }
 
@@ -39,13 +39,6 @@ body{
 
 #reverse{
   display: none;
-  background-color:#4251A8 ;
-  color: white;
-  width: 100%;
-  transition: .3s;
-}
-#reverse:hover{
-  background-color:#2E2A6D;
 }
 .error{
   border: 3px solid red;

@@ -8,11 +8,19 @@
 ## Description
 
 
+## Required Technologies for Viewing/Working on These Project Files
+* Modern Browser
+* Text Editor
+
 ## Set-up Instructions
-1. 
+1. Clone this repo to your desktop
+2. Open index.html in the browser of your choice
+* <em>Alternatively you can just click [HERE](https://maxbrockbank.github.io/friday_solo_project3/)
 
 ## Technologies Used
-* 
+* HTML
+* CSS/Bootstrap
+* Javascript/ jQuery
 
 ## Specs
 * Describe: filterNumbers()
@@ -35,6 +43,7 @@
 * Test: "It will make the output results reversed"
 * Expect (filterNumber(["Beep", "Boop", "Won't you be my neighbor?", 4]).toEqual([4, "Won't you be my neighbor?", "Boop!", "Beep!"]))
 ## Known Bugs
+* No bugs currently known (please inform project owner if any are found)
 
 
 ## Legal

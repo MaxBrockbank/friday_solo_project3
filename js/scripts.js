@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $("#roboger").submit(function(event){
     // Business
     let userInput = $("#userInput1").val();
@@ -30,8 +31,10 @@ $(document).ready(function(){
     }
       
     //UI
+
     const results = $("#results");
     const reverse = $("#reverse")
+
     function filterNumbers(userInput){
       $("input#userInput1").removeClass("error");
       results.children("#results-list").text("");
