@@ -29,7 +29,7 @@
 * Test: "It will reverse the array containing the number range."
 * Expect: (filterNumber(10).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
-* Test: It will combine all current test to work together. Start by creating the range array, then reversing it. After that search through the range array for matches to the checks array and replace the matches with the matching index in the replacements array.
+* Test: "It will combine all current test to work together. Start by creating the range array, then reversing it. After that search through the range array for matches to the checks array and replace the matches with the matching index in the replacements array."
 * Expect: (filterNumber(10).toEqual(["Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]))
 
 ## Known Bugs
