@@ -2,10 +2,11 @@ $(document).ready(function(){
 
   const checks = [3, 2, 1];
   const replacements = ["Won't you be my neighbor?", "Boop!", "Beep!"];
+  let range = [];
 
   $("#roboger").submit(function(event){
     event.preventDefault();
-    const userNumber = $("#userInput1").val();
+    const userInput = $("#userInput1").val();
 
     function checkNumbers(userInput){
       let output = userInput.toString();
@@ -21,8 +22,19 @@ $(document).ready(function(){
       }
     }
 
+    function getNumberRange(userInput){
+      range = [];
+      let userNumber = parseInt(userInput);
+      do {
+        range.push(userNumber);
+        userNumber --;
+      } while( userNumber > 0 )
+      console.log(range);
+    }
 
-    checkNumbers(userNumber);
+
+    // checkNumbers(userInput);
+    getNumberRange(userInput);
   })
 
 })

@@ -23,6 +23,9 @@ Expect:(filterNumbers(3).toEqual(true))
 Test: "It will replace any number in the [3, 2, 1] array with the proper its matching index in ["Beep!", "Boop!", "Won't you be my neighbor?"]"
 Expect: (filterNumbers(3).toEqual("Won't you be my neighbor?"))
 
+Test: "It will produce an array with all the numbers between userInput and 0."
+Expect: (filteNumbers(10).toEqual([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
+
 ## Known Bugs
 *
 
