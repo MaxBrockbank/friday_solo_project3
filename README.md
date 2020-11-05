@@ -6,7 +6,7 @@
 <p align="center">Updated on Oct 30, 2020</p>
 
 ## Description
-
+This is an application that takes a user input and replaces any number that contains a 1, 2, or 3 with a specified string. It is a practice for using JavaScript looping, conditional statements and DOM manimpulation. 
 
 ## Required Technologies for Viewing/Working on These Project Files
 * Modern Browser
