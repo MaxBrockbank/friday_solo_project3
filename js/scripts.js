@@ -27,32 +27,33 @@ function checkNumbers(numberRange){
 }
 
 //UI Logic
-function filterNumbers(userInput, results, reverse){
-  $("input#userInput1").removeClass("error");
-  results.children("#results-list").text("");
-  reverse.hide();
-  if(userInput > 0){
-    let numberRange = getNumberRange(userInput);
-    let finalOutput = checkNumbers(numberRange);
-    results.children("#results-number").text("You have " +finalOutput.length+  " results:")
-    finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
-    results.fadeIn();
-    $("input#userInput1").blur()
-    reverse.show();
-    if(reverse.click(function(){
-      const reverseOutput = finalOutput.reverse();
-      results.children("#results-list").text("");
-      reverseOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
-    }));
-  } else {
-    $("#userInput1").addClass("error");
-    results.children("#results-number").text("You have to enter a number for this to work");
-    results.fadeIn();
-    $("input#userInput1").blur()
-  }
-}
-$(document).ready(function(){
 
+$(document).ready(function(){
+  
+  function filterNumbers(userInput, results, reverse){
+    $("input#userInput1").removeClass("error");
+    results.children("#results-list").text("");
+    reverse.hide();
+    if(userInput > 0){
+      let numberRange = getNumberRange(userInput);
+      let finalOutput = checkNumbers(numberRange);
+      results.children("#results-number").text("You have " +finalOutput.length+  " results:")
+      finalOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
+      results.fadeIn();
+      $("input#userInput1").blur()
+      reverse.show();
+      if(reverse.click(function(){
+        const reverseOutput = finalOutput.reverse();
+        results.children("#results-list").text("");
+        reverseOutput.forEach( output => results.children("#results-list").append("<li>" + output + "</li>"));
+      }));
+    } else {
+      $("#userInput1").addClass("error");
+      results.children("#results-number").text("You have to enter a number for this to work");
+      results.fadeIn();
+      $("input#userInput1").blur()
+    }
+  }
   $("#roboger").submit(function(event){
     let userInput = $("#userInput1").val();
     const originalInput = $("#userInput1").val();
